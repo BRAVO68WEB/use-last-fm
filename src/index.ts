@@ -10,8 +10,6 @@ import useSWR from 'swr';
  * @param imageSize The size of the image
  */
 export function useLastFM(
-  username: string = "bravo68web",
-  token: string = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   interval: number = 15 * 1000,
   imageSize: TrackImage['size'] = 'extralarge',
 ): State {
