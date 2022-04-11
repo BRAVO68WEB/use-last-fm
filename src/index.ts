@@ -15,7 +15,7 @@ export function useLastFM(
   interval: number = 15 * 1000,
   imageSize: TrackImage['size'] = 'extralarge',
 ): State {
-  const endpoint = `//ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${token}&format=json&limit=1`;
+  const endpoint = `https://api.b68dev.xyz/me/lastfm/current`;
 
   const { data: track = null, error } = useSWR<LastFMResponseBody, Error>(
     endpoint,
