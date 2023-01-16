@@ -13,7 +13,7 @@ export function useLastFM(
   interval: number = 15 * 1000,
   imageSize: TrackImage['size'] = 'extralarge',
 ): State {
-  const endpoint = `https://api.b68dev.xyz/me/lastfm/current`;
+  const endpoint = `https://api.b68.dev/me/lastfm/current`;
 
   const { data: track = null, error } = useSWR<LastFMResponseBody, Error>(
     endpoint,
